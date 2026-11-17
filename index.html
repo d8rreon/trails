@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trail Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style src="style.css"></style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">Trail Finder</div>
+      <a href="#saved-section" class="saved-link">
+        ★ Saved: <span id="header-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Find Your Next Adventure</h1>
+      <p>
+        Explore beautiful hiking trails, save your favorites,
+        and plan your next outdoor adventure.
+      </p>
+      <a href="#trails-section" class="explore-button">
+        Explore Trails
+      </a>
+    </section>
+
+    <section id="trails-section" class="section">
+      <div class="section-heading">
+        <div>
+          <h2>Explore Hiking Trails</h2>
+          <p>Discover trails for every experience level.</p>
+        </div>
+        <span id="trail-count" class="count-label">
+          Loading...
+        </span>
+      </div>
+
+      <div id="trail-list" class="trail-grid"></div>
+    </section>
+
+    <section id="saved-section" class="section saved-section">
+      <div class="section-heading">
+        <div>
+          <h2>★ Saved Trails</h2>
+          <p>Your personal hiking bucket list.</p>
+        </div>
+
+        <div class="saved-actions">
+          <span id="saved-count" class="count-label">
+            Saved: 0
+          </span>
+          <button id="clear-all" class="clear-button">
+            Clear All
+          </button>
+        </div>
+      </div>
+
+      <div id="saved-list" class="trail-grid"></div>
+    </section>
+  </main>
+
+
+</body>
+</html>
