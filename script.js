@@ -64,14 +64,14 @@ function createTrailCard(trail, isSavedSection = false) {
 
   const icon = document.createElement("div");
   icon.className = "card-icon";
-  icon.textContent = "🥾";
+  icon.textContent = "";
 
   const title = document.createElement("h3");
   title.textContent = trail.name;
 
   const park = document.createElement("p");
   park.className = "park-name";
-  park.textContent = "📍 " + trail.park;
+  park.textContent = " " + trail.park;
 
   const info = document.createElement("div");
   info.className = "trail-info";
